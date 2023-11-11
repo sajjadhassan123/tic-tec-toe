@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            <h1 class="main">Ahmed Tic-Tac-Toe Game</h1>
+            <div class="game-info">
+                <h2>Welcome to Ahmed Tic-Tac-Toe!</h2>
+                <p>Test your strategic skills in this classic game of Tic-Tac-Toe. The rules are simple: two players take
+                    turns to mark 'X' and 'O' on a 3x3 grid, aiming to be the first to get three of their marks in a row,
+                    column, or diagonal.</p>
+                <br>
+                <p>
+                    Players take turns marking empty cells on the grid with their respective symbols: 'X' and 'O'.
+                    The objective is to be the first to form a line of three of their symbols either horizontally, vertically, or diagonally.
+                    The game ends when one player achieves this goal or when all the cells on the grid are filled, resulting in a draw.
+                </p>
+                <br>
+                <br>
+                <p>Ready to play? Click the "Start Game" button to begin your Tic-Tac-Toe adventure.</p>
+            </div>
+            <button id="start-button" class="start-button">Start Game</button>
+            <div class="name-form" id="name-form" style="display: none;">
+                <span class="close-button" id="close-button" onclick="closeForm()">&#10006;</span>
+                <h3>Enter Your Name</h3>
+                <div class="input-container">
+                    <input type="text" id="player-name" placeholder="Type your name here..." required>
+                </div>
+                <button id="submit-button" class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
